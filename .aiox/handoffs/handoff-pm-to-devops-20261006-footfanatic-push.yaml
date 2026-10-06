@@ -1,0 +1,20 @@
+handoff:
+  from_agent: pm
+  to_agent: devops
+  story_context:
+    story_id: "N/A - documentacao de produto"
+    story_path: "N/A"
+    story_status: "N/A"
+    current_task: "Publicar o commit b2b78c8 em origin/main"
+    branch: main
+  decisions:
+    - "O commit b2b78c8 contem somente os cinco documentos listados abaixo."
+    - "Nao incluir outras pastas nao rastreadas nem arquivos de estado de sessao."
+  files_modified:
+    - docs/personas/administrador.md
+    - docs/personas/investidor.md
+    - docs/personas/torcedor.md
+    - docs/product/jornadas-da-aplicacao.md
+    - docs/product/requisitos-funcionais.md
+  blockers: []
+  next_action: "Fazer push sem force para origin/main e verificar que a referencia remota aponta para b2b78c8."
